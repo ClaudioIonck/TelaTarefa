@@ -5,15 +5,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
-import javax.swing.Box;
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
+import javax.swing.*;
 //import javax.swing.JTextField;
 
 public class Texto implements ActionListener
@@ -23,6 +15,7 @@ public class Texto implements ActionListener
     JTextArea area;
     //JTextField texto;
     JButton botao;
+    JButton botao2;
 
     // Cria painel
     public Container CriaPainel()
@@ -34,10 +27,12 @@ public class Texto implements ActionListener
         rotulo = new JLabel("Castro de Tarefas:");
         area = new JTextArea(conteudo);
         //texto = new JTextField();
-        botao = new JButton("Ok");
+        botao = new JButton("GRAVAR");
+        botao2 = new JButton("CANCELAR");
 
         // Cria evento do botão
         botao.addActionListener(this);
+        botao2.addActionListener(this);
 
         // Adiciona valores as propriedades da area de texto
         area.setFont(new Font("Serif", Font.ITALIC, 12));
@@ -77,6 +72,7 @@ public class Texto implements ActionListener
         area.setAlignmentX(Component.CENTER_ALIGNMENT);
         //texto.setAlignmentX(Component.CENTER_ALIGNMENT);
         botao.setAlignmentX(Component.CENTER_ALIGNMENT);
+        botao2.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Adiciona componentes no painel
         painel.add(rotulo);
@@ -88,7 +84,9 @@ public class Texto implements ActionListener
         painel.add(Box.createVerticalStrut(5));
         //painel.add(texto);
         painel.add(Box.createVerticalStrut(5));
+        //add botão
         painel.add(botao);
+        painel.add(botao2);
 
         // Retorna o painel
         return painel;
@@ -96,18 +94,18 @@ public class Texto implements ActionListener
 
     public void actionPerformed(ActionEvent arg0)
     {
-        // Cria evento para o botão     
+        // Cria evento para o botão
         if (arg0.getSource() == botao)
         {
             //area.append(texto.getText() + "\n");
         }
     }
 
-    // Cria a GUI
+    // Cria a Title do app
     public static void criaGUI()
     {
         // Cria formulario
-        JFrame formulario = new JFrame("DA - JTextArea");
+        JFrame formulario = new JFrame("CADASTRO DE TAREFAS");
 
         formulario.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
