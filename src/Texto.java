@@ -63,6 +63,13 @@ public class Texto implements ActionListener
         // Cria o painel
         JPanel painel = new  JPanel();
 
+        //colocar o select box aqui:
+
+
+
+
+
+
         // Cria um layout para os componentes
         painel.setLayout(new BoxLayout(painel,BoxLayout.PAGE_AXIS));
         painel.setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
