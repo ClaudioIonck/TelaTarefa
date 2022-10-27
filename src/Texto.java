@@ -29,7 +29,6 @@ public class Texto implements ActionListener
         // Cria componentes
         rotulo = new JLabel("Castro de Tarefas:");
         area = new JTextArea(conteudo);
-        rotulo.setVerticalTextPosition(CENTER);
 
         //colocar SelectBox aqui:
         JLabel Priority = new JLabel("Prioridade");
