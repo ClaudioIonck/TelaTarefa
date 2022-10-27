@@ -71,6 +71,8 @@ public class Texto implements ActionListener
         // Tamanho da barra
         scrooll.setPreferredSize(new Dimension(250, 250));
 
+
+
         // Borda com titulo
         scrooll.setBorder(
                 BorderFactory.createCompoundBorder(
@@ -80,16 +82,10 @@ public class Texto implements ActionListener
                         scrooll.getBorder()));
 
 
-        //colocar o select box aqui:
-
 
 
         // Cria o painel
         JPanel painel = new  JPanel();
-
-        // saiu
-        
-
 
 
         // Cria um layout para os componentes
