@@ -45,6 +45,11 @@ public class Texto implements ActionListener
         botao.addActionListener(this);
         botao2.addActionListener(this);
 
+        botao.setVerticalTextPosition(AbstractButton.BOTTOM);
+        botao.setHorizontalTextPosition(AbstractButton.LEADING);
+        botao2.setVerticalTextPosition(AbstractButton.BOTTOM);
+        botao2.setHorizontalTextPosition(AbstractButton.LEFT);
+
         // Adiciona valores as propriedades da area de texto
         area.setFont(new Font("Serif", Font.ITALIC, 12));
         area.setLineWrap(true);
@@ -91,10 +96,9 @@ public class Texto implements ActionListener
         rotulo.setAlignmentX(Component.LEFT_ALIGNMENT);
         area.setAlignmentX(Component.CENTER_ALIGNMENT);
         //texto.setAlignmentX(Component.CENTER_ALIGNMENT);
-        botao.setAlignmentX(Component.CENTER_ALIGNMENT);
-        botao2.setAlignmentX(Component.CENTER_ALIGNMENT);
-        ComboBoxPrioridade.setAlignmentX(Component.CENTER_ALIGNMENT);
-        lembrarCheckBox.setAlignmentX(Component.LEFT_ALIGNMENT);
+        //botao.setAlignmentX(Component.CENTER_ALIGNMENT);
+        //botao2.setAlignmentX(Component.CENTER_ALIGNMENT);
+
 
 
 
