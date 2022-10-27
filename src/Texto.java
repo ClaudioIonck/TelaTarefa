@@ -88,11 +88,15 @@ public class Texto implements ActionListener
         painel.setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
 
         // Alinha componentes
-        rotulo.setAlignmentX(Component.CENTER_ALIGNMENT);
+        rotulo.setAlignmentX(Component.LEFT_ALIGNMENT);
         area.setAlignmentX(Component.CENTER_ALIGNMENT);
         //texto.setAlignmentX(Component.CENTER_ALIGNMENT);
         botao.setAlignmentX(Component.CENTER_ALIGNMENT);
         botao2.setAlignmentX(Component.CENTER_ALIGNMENT);
+        ComboBoxPrioridade.setAlignmentX(Component.CENTER_ALIGNMENT);
+        lembrarCheckBox.setAlignmentX(Component.LEFT_ALIGNMENT);
+
+
 
         // Adiciona componentes no painel
         painel.add(rotulo);
@@ -103,14 +107,23 @@ public class Texto implements ActionListener
         painel.add(scrooll);
         painel.add(Box.createVerticalStrut(5));
         //painel.add(texto);
+
+        painel.add(Box.createVerticalStrut(5));
+
+        // add ComboBox
+        painel.add(ComboBoxPrioridade);
         painel.add(Box.createVerticalStrut(5));
 
         //check box
         painel.add(lembrarCheckBox);
+        painel.add(Box.createVerticalStrut(5));
 
         //add botão
         painel.add(botao);
+        painel.add(Box.createVerticalStrut(5));
         painel.add(botao2);
+        painel.add(Box.createVerticalStrut(5));
+
 
 
 
