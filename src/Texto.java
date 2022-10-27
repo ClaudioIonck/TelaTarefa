@@ -26,6 +26,17 @@ public class Texto implements ActionListener
         // Cria componentes
         rotulo = new JLabel("Castro de Tarefas:");
         area = new JTextArea(conteudo);
+
+        //colocar SelectBox aqui:
+        JLabel Priority = new JLabel("Prioridade");
+        String[] nivelPriority = {"Alto", "Normal", "Baixo"};
+        JComboBox ComboBoxPrioridade = new JComboBox(nivelPriority);
+
+        //colocar o checkbox aqui:
+
+        JCheckBox lembrarCheckBox = new JCheckBox("Finalizado                 ");
+        lembrarCheckBox.setSelected(true);
+
         //texto = new JTextField();
         botao = new JButton("GRAVAR");
         botao2 = new JButton("CANCELAR");
@@ -60,13 +71,15 @@ public class Texto implements ActionListener
                         scrooll.getBorder()));
 
 
-        // Cria o painel
-        JPanel painel = new  JPanel();
-
         //colocar o select box aqui:
 
 
 
+        // Cria o painel
+        JPanel painel = new  JPanel();
+
+        // saiu
+        
 
 
 
@@ -91,9 +104,15 @@ public class Texto implements ActionListener
         painel.add(Box.createVerticalStrut(5));
         //painel.add(texto);
         painel.add(Box.createVerticalStrut(5));
+
+        //check box
+        painel.add(lembrarCheckBox);
+
         //add botão
         painel.add(botao);
         painel.add(botao2);
+
+
 
         // Retorna o painel
         return painel;
