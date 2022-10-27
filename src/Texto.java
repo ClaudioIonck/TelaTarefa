@@ -27,7 +27,7 @@ public class Texto implements ActionListener
         String conteudo =  "Digite sua tarefa:";
 
         // Cria componentes
-        rotulo = new JLabel("Castro de Tarefas:");
+        rotulo = new JLabel("Registrar tarefa");
         area = new JTextArea(conteudo);
 
         //colocar SelectBox aqui:
@@ -37,11 +37,11 @@ public class Texto implements ActionListener
 
         //colocar o checkbox aqui:
 
-        JCheckBox lembrarCheckBox = new JCheckBox("Finalizado                 ");
+        JCheckBox lembrarCheckBox = new JCheckBox("Finalizado");
         lembrarCheckBox.setSelected(true);
 
         //texto = new JTextField();
-        botao = new JButton("GRAVAR");
+        botao = new JButton("  GRAVAR  ");
         botao2 = new JButton("CANCELAR");
 
         // Cria evento do botão
@@ -93,7 +93,7 @@ public class Texto implements ActionListener
 
         // Alinha componentes
         rotulo.setAlignmentX(Component.CENTER_ALIGNMENT);
-        //area.setAlignmentX(Component.CENTER_ALIGNMENT);
+        area.setAlignmentX(Component.CENTER_ALIGNMENT);
         //botao.setAlignmentX(Component.CENTER_ALIGNMENT);
         //botao2.setAlignmentX(Component.CENTER_ALIGNMENT);
 

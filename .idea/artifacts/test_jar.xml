@@ -3,6 +3,8 @@
     <output-path>$PROJECT_DIR$/out/artifacts/test_jar</output-path>
     <root id="archive" name="test.jar">
       <element id="module-output" name="test" />
+      <element id="library" level="project" name="test" />
+      <element id="library" level="project" name="test1" />
     </root>
   </artifact>
 </component>
