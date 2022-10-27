@@ -6,6 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
+
+import static javax.swing.SwingConstants.CENTER;
 //import javax.swing.JTextField;
 
 public class Texto implements ActionListener
@@ -27,6 +29,7 @@ public class Texto implements ActionListener
         // Cria componentes
         rotulo = new JLabel("Castro de Tarefas:");
         area = new JTextArea(conteudo);
+        rotulo.setVerticalTextPosition(CENTER);
 
         //colocar SelectBox aqui:
         JLabel Priority = new JLabel("Prioridade");
@@ -49,7 +52,7 @@ public class Texto implements ActionListener
         botao.setVerticalTextPosition(AbstractButton.BOTTOM);
         botao.setHorizontalTextPosition(AbstractButton.LEADING);
         botao2.setVerticalTextPosition(AbstractButton.BOTTOM);
-        botao2.setHorizontalTextPosition(AbstractButton.CENTER);
+        botao2.setHorizontalTextPosition(CENTER);
 
         // Adiciona valores as propriedades da area de texto
         area.setFont(new Font("Serif", Font.ITALIC, 12));
@@ -95,7 +98,7 @@ public class Texto implements ActionListener
 
         // Alinha componentes
         rotulo.setAlignmentX(Component.CENTER_ALIGNMENT);
-        area.setAlignmentX(Component.CENTER_ALIGNMENT);
+        //area.setAlignmentX(Component.CENTER_ALIGNMENT);
         //botao.setAlignmentX(Component.CENTER_ALIGNMENT);
         //botao2.setAlignmentX(Component.CENTER_ALIGNMENT);
 
