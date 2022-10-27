@@ -17,6 +17,7 @@ public class Texto implements ActionListener
     JButton botao;
     JButton botao2;
 
+
     // Cria painel
     public Container CriaPainel()
     {
@@ -48,7 +49,7 @@ public class Texto implements ActionListener
         botao.setVerticalTextPosition(AbstractButton.BOTTOM);
         botao.setHorizontalTextPosition(AbstractButton.LEADING);
         botao2.setVerticalTextPosition(AbstractButton.BOTTOM);
-        botao2.setHorizontalTextPosition(AbstractButton.LEFT);
+        botao2.setHorizontalTextPosition(AbstractButton.CENTER);
 
         // Adiciona valores as propriedades da area de texto
         area.setFont(new Font("Serif", Font.ITALIC, 12));
@@ -93,9 +94,8 @@ public class Texto implements ActionListener
         painel.setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
 
         // Alinha componentes
-        rotulo.setAlignmentX(Component.LEFT_ALIGNMENT);
+        rotulo.setAlignmentX(Component.CENTER_ALIGNMENT);
         area.setAlignmentX(Component.CENTER_ALIGNMENT);
-        //texto.setAlignmentX(Component.CENTER_ALIGNMENT);
         //botao.setAlignmentX(Component.CENTER_ALIGNMENT);
         //botao2.setAlignmentX(Component.CENTER_ALIGNMENT);
 
